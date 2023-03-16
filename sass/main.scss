@@ -3,13 +3,22 @@
   width: 1000px;
   margin: 30px auto;
   display: grid;
-  grid-template-rows: 150px 150px; // height
-  grid-template-columns: 150px 150px 150px; // width
+  grid-template-rows: repeat(2, 150px); // height
+  // grid-template-columns: repeat(2, 150px) 1fr; // width
+  // grid-template-columns: repeat(3, 1fr); // width
+  // grid-template-columns: 1fr 3fr 3fr; // width
+  // grid-template-columns: 50% 1fr 1fr; // width
+  // grid-template-columns: 50% 1fr 2fr; // width
+
+  grid-template-columns: repeat(3, 1fr); // width
 
   // grid-row-gap: 30px;
   // grid-column-gap: 50px;
 
   grid-gap: 30px;
+  // grid-gap: 80px;
+  // height: 1000px;
+  // grid-template-rows: repeat(2, 1fr); // height
 }
 
 .item {
